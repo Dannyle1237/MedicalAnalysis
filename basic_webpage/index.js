@@ -1,6 +1,10 @@
 //Here I define global variables
 //var can be changed through code
 var timer = false;
+var interval;
+var seconds = 0;
+var minutes = 0;
+
 //const cannot be changed
 //Here I store the element from line 10 in the HTML doc "seconds"
 //into variable html_seconds_value
@@ -12,11 +16,9 @@ const html_seconds_value = document.getElementById("seconds");
 //Here I store the minutes document element from the HTML page
 const html_minutes_value = document.getElementById("minutes");
 
+
 function start(){
     timer=true;
-    seconds = 0;
-    minutes = 0;
-    
     //To debug a website, most beginners use console.log, 
     //which is similar to just a print statement
     //To see console.log statements, press F12 on your browser or open up 
@@ -28,7 +30,7 @@ function start(){
         //Here, I use setInterval to set up a function to continuously run
         //It works similarly to a while loop, however an infinite while loop may 
         //crash your browser
-        var interval = setInterval(function(){
+        interval = setInterval(function(){
             seconds += 1;
             //Now you can adjust the value on the doc by assigning
             //its textContent attribute a new value
