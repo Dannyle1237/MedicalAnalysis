@@ -28,7 +28,7 @@ function start(){
         //Here, I use setInterval to set up a function to continuously run
         //It works similarly to a while loop, however an infinite while loop may 
         //crash your browser
-        setInterval(function(){
+        var interval = setInterval(function(){
             seconds += 1;
             //Now you can adjust the value on the doc by assigning
             //its textContent attribute a new value
