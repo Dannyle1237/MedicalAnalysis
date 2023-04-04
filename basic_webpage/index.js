@@ -38,7 +38,7 @@ function start(){
                 html_minutes_value.textContent = minutes + " minutes"; 
                 seconds = 0;
             }
-        }, 100);
+        }, 500);
     }
 }
 
