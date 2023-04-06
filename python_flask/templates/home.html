@@ -1,0 +1,38 @@
+{% extends "base.html"%}
+{%block header%}
+SASEMD - Home Page
+{%endblock%}
+
+{%block content%}
+    <div id="search_bar">
+        <label>Enter Symptom Here:</label>
+        <div class="dropdown">
+            <input type="text" placeholder="Search..." id="symptom_input" onkeyup="filterFunction()" onblur="dropdown()" onfocus="dropdown()">
+            <div id="dropdown_search" class="dropdown-content">
+                <div id = "dropdown_scroll" style="overflow:scroll">
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                    <div><a href="#about">About</a></div>
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn btn-primary btn-lg" id="submit_symptom_btn">Submit</button>
+    </div>
+    
+    <div id="lists">
+
+    </div>
+
+{%endblock%}
