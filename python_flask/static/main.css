@@ -56,5 +56,23 @@ display: block;
 .show {display:block;}
 
 #dropdown_scroll{
-    height: 45vh;
+    height: 46vh;
+}
+
+#lists{
+    padding-top: 10px;
+}
+
+#lists ul{
+    display: inline-block;
+    height:500px;
+}
+
+#list1{
+    width:49%;
+    border: 1px solid black;
+}
+#list2{
+    width:49%;
+    border: 1px solid black;
 }
