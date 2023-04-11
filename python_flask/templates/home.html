@@ -10,8 +10,8 @@ SASEMD - Home Page
             <input type="text" placeholder="Search..." id="symptom_input" onkeyup="filterFunction()" onblur="dropdown()" onfocus="dropdown()">
             <div id="dropdown_search" class="dropdown-content">
                 <div id = "dropdown_scroll" style="overflow:scroll">
-                    {% for disease in diseaseList %}
-                    <div><a href="#">{{disease}}</a></div>
+                    {% for symptom in symptomList %}
+                    <div><a href="#">{{symptom}}</a></div>
                     {% endfor %}
                 </div>
             </div>
