@@ -85,10 +85,9 @@ display: block;
 }
 
 .information{
-    text-align: left;
-    text-indent: 100px;
+    text-align: center;
     font-size: 24px;
-    line-height: 7
+    line-height: 4;
 }
 
 .icons{
