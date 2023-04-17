@@ -27,7 +27,5 @@ function dostuff(){
   var text = document.createTextNode('New list item');
   li.appendChild(text);
   ul.appendChild(li);
- 
- 
-
 }
+
