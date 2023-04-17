@@ -12,18 +12,38 @@ def home():
     symptoms = dbf.storeQueryToVar('''SELECT * FROM Symptom''')
     combinations = dbf.storeQueryToVar('''SELECT * FROM Combination''')
     arr = ["dischromic_patches", "itching"]
-    if arr[0] in combinations[0][1]: #if "dischromic_patches" in dischromic_patches itching nodal_skin_eruptions skin_rash
-        if arr[1] in combinations[0][1]:
-            print("Is found")
-    print(combinations[0])
+    confirmed_diseases = []
+    for i in range (len(combinations)):     #pulls row
+        count = 0
+        for symptom in arr:                 #pulls symptom list
+            if symptom in combinations[i][1]: #checks for symptoms in combinations[rows][column]\
+                count += 1
+        if count == (len(arr)):
+            print(combinations[i])
+            if combinations[i][0] not in confirmed_diseases:
+                confirmed_diseases.append(combinations[i][0]) 
+                    
+    print("Confirmed diseases " + str(confirmed_diseases))
+
+
+
+
     #Because everything in a database is stored as a tuple(array), you can 
     #grab the first value of each item
     for idx, item in enumerate(symptoms):
         symptoms[idx] = item[0]
     #print(symptoms)
 
+    print("Symptoms:" + str(symptoms))
+    return render_template("home.html", symptomList = symptoms, confirmed_diseases = confirmed_diseases)
 
-    return render_template("home.html", symptomList = symptoms)
+@app.route("/about")
+def about():
+    return render_template("about.html")
+
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 #Below runs webapp
 if __name__=='__main__':
