@@ -65,7 +65,7 @@ display: block;
 
 #lists ul{
     display: inline-block;
-    height:500px;
+    
 }
 
 #list1{
@@ -75,4 +75,22 @@ display: block;
 #list2{
     width:49%;
     border: 1px solid black;
+}
+
+/* Contact page stuff */
+
+.headingcontact{
+    text-align: center;
+    
+}
+
+.information{
+    text-align: center;
+    font-size: 24px;
+    line-height: 4;
+}
+
+.icons{
+    max-width: 5%;
+    height: auto;
 }

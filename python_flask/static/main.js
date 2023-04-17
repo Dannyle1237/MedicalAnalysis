@@ -20,3 +20,14 @@ function dropdown() {
       }
     }
   }
+
+function dostuff(){
+  var ul = document.querySelector('ul');
+  var li = document.createElement('li');
+  var text = document.createTextNode('New list item');
+  li.appendChild(text);
+  ul.appendChild(li);
+ 
+ 
+
+}
