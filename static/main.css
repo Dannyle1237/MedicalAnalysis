@@ -50,7 +50,7 @@ display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: lightblue}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
@@ -59,29 +59,32 @@ display: block;
     height: 46vh;
 }
 
+
+
 #lists{
-    padding-top: 10px;
+    height:1500px;
+    left:10px;
 }
 
 #lists ul{
+    list-style: none;
+    vertical-align:top;
+    height:50%;
+    font-size: 25px;
+    width:49%;
     display: inline-block;
-    
-}
-
-#list1{
-    width:49%;
     border: 1px solid black;
+    text-align: center;
 }
-#list2{
-    width:49%;
-    border: 1px solid black;
+.close{
+    position: relative;
+    right: 15%;
+    scale: 150%;
 }
-
 /* Contact page stuff */
 
 .headingcontact{
     text-align: center;
-    
 }
 
 .information{
