@@ -1,0 +1,40 @@
+{% extends "base.html"%}
+
+
+{%block content%}
+    <form method="POST">
+        <div id="search_bar">
+            <label>Enter Symptom Here:</label>
+            <div class="dropdown">
+                <input type="text" name ="symptom_input" placeholder="Search..." id="symptom_input" onkeyup="filterFunction()" onblur="dropdown()" onfocus="dropdown()">
+                <div id="dropdown_search" class="dropdown-content">
+                    <div id = "dropdown_scroll" style="overflow:scroll">
+                        {% for symptom in symptomList %}
+                        <div><a href="#">{{symptom}}</a></div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg" id="submit_symptom_btn" onclick="dostuff()">Submit</button>
+        </div>
+    </form>
+    
+    <div id="lists">
+        <ul id = "list1">
+            <h3>Symptoms Searched</h3>
+            {% for user in userList %}
+            <li>{{user}}</li>
+            <button type="button" id="symptom{{idx}}" class="close" onClick="deleteSymptom()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            {%endfor%}
+        </ul>
+        <ul id ="list2">
+            <h3>Diseases Added</h3>
+            {% for disease in confirmedDiseases %}
+            <li>{{disease}}</li>
+            {%endfor%}
+        </ul>
+    </div>
+
+{%endblock%}
