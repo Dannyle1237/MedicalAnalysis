@@ -3,28 +3,63 @@
     SASE LOGO GREEN = #8dc83f
 */
 
+@font-face{
+    font-family: "saselogo";
+    src: url('./font/Microgramma\ D\ Extended\ Bold.otf');
+}
+
+/* body{
+    border-left: .4rem solid #0e6db7;
+    border-right: .4rem solid #8dc83f;
+
+} */
+
+/* #navborder{
+    border-top: 4px solid #8dc83f;
+    border-bottom: 4px solid #8dc83f;
+} */
+
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,.9);
 }
 .navbar{
+    border-top: .5rem solid #0e6db7;
+    border-bottom: .4rem solid #0e6db7;
+    border-left:.4rem solid #8dc83f;
+    border-right:.4rem solid #8dc83f;
+    
 }
+#house_logo{
+    position:relative;
+    height:35px;
+    width:35px;
+    bottom:1px;
+}
+
 #container{
     display: flex;
 }
+
+
+
 #search_bar{
-    height:35vh;
+    position: relative;
+    top:-50px;
+    height:1vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 35px;
 }
 #symptom_input{
-    width: 50vh;
+    width: 70vh;
     height: 50px;
     margin-left: 10px;
     margin-right: 15px;
 }
-  
+#input_label{
+    background: rgba(255, 255, 255, 0.8)
+}
 .dropdown {
     position: relative;
     display: inline-block;
@@ -73,18 +108,49 @@ display: block;
 
 #lists{
     height:1500px;
-    left:10px;
 }
 
 #lists ul{
+    position: relative;
+    left:1%;
     list-style: none;
     vertical-align:top;
     height:50%;
     font-size: 25px;
     width:49%;
     display: inline-block;
-    border: 1px solid black;
+    border: 7px solid #0e6db7;
+    /* border-top: 7px solid #0e6db7; */
     text-align: center;
+    justify-content: center;
+}
+
+#lists ul h3{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom:8px solid #0e6db7;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #f6f6f6;
+}
+
+#header_img{
+    position: relative;
+    text-align: center;
+}
+#dna_background{
+    background-color: transparent;
+    width:100%;
+    height:40vh;
+    opacity: 100%;
+    object-fit: cover;
+}
+#sase_logo{
+    position: relative;
+    width:175px;
+    height:75px;
+    top:10px;
+    margin-right:.1rem;
 }
 .close{
     position: relative;
@@ -108,7 +174,43 @@ display: block;
     height: auto;
 }
 
-.navbar-brand{
-    font-size: 35px;
+.navbar-light .navbar-brand{
+    font-size: 50px;
     font-weight: bold;
+    color: #0e6db7;
+    margin-right:0;
+    padding-top:.1rem;
+    
+    /* font-family: "saselogo"; */
+    display:flex;
+}
+
+.navbar-light .navbar-brand p{
+    position: relative;
+    top:13px;
+}
+
+.navbar-light .navbar-brand:hover{
+    text-decoration: none;
+    background-color: transparent !important;
+    color: #0e6db7;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:black;
+    font-size: 20px;
+    margin:.1rem;
+    /* border:4px solid #8dc83f;
+    border-radius: 10%; */
+    /* height:100%; */
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    background-color:#8dc83f;
+    color:white;
+}
+
+form{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }

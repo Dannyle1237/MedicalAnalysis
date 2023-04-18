@@ -20,23 +20,29 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #0e6db7; height: 75px;">
-        <a class="navbar-brand" href="/">{%block header%}SASE MD - HOMEPAGE{%endblock%}</a>
-        <button 
-        class ="navbar-toggler" 
-        type="button" 
-        data-toggle="collapse" 
-        data-target="#navbar"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id ="navbar">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" id="About" href="https://www.saseconnect.org/">About</a>
-                <a class="nav-item nav-link" id="logout" href="/contact">Contact</a>
+    <div id="navborder">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; height: 90px;">
+            <a class="navbar-brand" href="/">        
+                <img class="navbar-brand" id ="sase_logo" src="/static/images/SASELOGO.png">
+                <p>{%block HEADER%}MD{%endblock%}</p>
+            </a>
+            <img id ="house_logo" src="/static/images/house-logo-white-hi.png">
+            <button 
+            class ="navbar-toggler" 
+            type="button" 
+            data-toggle="collapse" 
+            data-target="#navbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id ="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" id="About" href="https://www.saseconnect.org/">About</a>
+                    <a class="nav-item nav-link" id="logout" href="/contact">Contact</a>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <div id="content">
         {%block content%}Content goes here{%endblock%}
     </div>

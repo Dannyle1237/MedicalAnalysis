@@ -3,10 +3,12 @@
 
 {%block content%}
     <form method="POST">
+        <div id="header_img">
+            <img id ="dna_background" src="/static/images/dna_background.jpg">
+        </div>
         <div id="search_bar">
-            <label>Enter Symptom Here:</label>
             <div id = "dropdown" class="dropdown">
-                <input type="text" name ="symptom_input" placeholder="Search..." id="symptom_input" autocomplete="off" onkeyup="filterFunction()" onfocus="dropdown()" onblur="dropdown()">
+                <input type="text" name ="symptom_input" placeholder="Enter Symptom..." id="symptom_input" autocomplete="off" onkeyup="filterFunction()" onfocus="dropdown()" onblur="dropdown()">
                 <div id="dropdown_search" class="dropdown-content">
                     <div id = "dropdown_scroll" style="overflow:scroll">
                         {% for symptom in symptomList %}

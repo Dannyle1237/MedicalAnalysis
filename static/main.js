@@ -26,6 +26,7 @@ for(let i = 0; i < dropdown_items.length; i++){
 
 disease_list_items = document.getElementsByClassName("list-group-item disease")
 for(let i = 0; i < disease_list_items.length; i++){
+  disease_list_items[i].style.cursor="pointer";
   disease_list_items[i].addEventListener("click", function(e){
     keyword = e.target.innerText;
     console.log(keyword)
