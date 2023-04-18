@@ -1,3 +1,13 @@
+/*
+    SASE LOGO BLUE =  #0e6db7
+    SASE LOGO GREEN = #8dc83f
+*/
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.9);
+}
+.navbar{
+}
 #container{
     display: flex;
 }
@@ -96,4 +106,9 @@ display: block;
 .icons{
     max-width: 10%;
     height: auto;
+}
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: bold;
 }
