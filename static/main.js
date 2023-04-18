@@ -24,6 +24,15 @@ for(let i = 0; i < dropdown_items.length; i++){
   })
 }
 
+disease_list_items = document.getElementsByClassName("list-group-item disease")
+for(let i = 0; i < disease_list_items.length; i++){
+  disease_list_items[i].addEventListener("click", function(e){
+    keyword = e.target.innerText;
+    console.log(keyword)
+    search_engine(keyword);
+  })
+}
+
 closeButtons = document.getElementsByClassName("close")
 for(let i = 0; i < closeButtons.length; i++){
   closeButtons[i].addEventListener("click", function(e){
@@ -81,3 +90,14 @@ function deleteSymptom(symptom){
   });
 }
 
+function search_engine(keyword){
+  key = keyword;
+   console.log(key);
+ 
+ key = key.toLowerCase();
+ key = key.replace(" ","");
+ console.log(key);
+ 
+  address = 'https://medlineplus.gov/'+key+'.html'
+  window.open(address, "_blank", "width=500,height=600");
+ }
