@@ -15,7 +15,7 @@ for(let i = 0; i < dropdown_items.length; i++){
   })
   //Click effect to save value if user wants it
   dropdown_items[i].addEventListener("mousedown", function(e){
-    console.log("Clicking");
+    //console.log("Clicking");
     tgt = e.target;
     if (tgt.classList.contains("dropdown_item")) {
       current = tgt.innerHTML;
@@ -55,7 +55,7 @@ function dropdown() {
     isMouseHover = true;
   }
   else{
-    console.log("value of current:" + current)
+    //console.log("value of current:" + current)
     document.getElementById("symptom_input").value = current;
     isMouseHover = false;
   }
@@ -64,7 +64,7 @@ function dropdown() {
 function filterFunction() {
   //First save the value User has currently
   current = document.getElementById("symptom_input").value;
-  console.log("Saving as current:" + current);
+  //console.log("Saving as current:" + current);
 
   var input, filter, ul, li, a, i;
   input = document.getElementById("symptom_input");
