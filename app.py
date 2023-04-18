@@ -6,7 +6,10 @@ from python_database import database_func as dbf
 app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
-
+def formatToRead(words):
+    words = words.replace('_', ' ')
+    words = words.title()
+    return str(words)
 
 def algorithm(arr):
     #Only run algorithm if array is not empty
