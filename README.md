@@ -32,11 +32,11 @@ Report: https://docs.google.com/document/d/1ueMHcRmaRuk9Tu6wh07MYRSmbVS5kJ3Ltk-2
 
 ## Acknowledgements
 Development Team
-Richard Vo
-Yongjun Le
-Troy Tran
-Natalie Mar
+* Richard Vo
+* Yongjun Le
+* Troy Tran
+* Natalie Mar
 
 Mentors
-Alexis Nguyen
-Danny Le
+* Alexis Nguyen
+* Danny Le
