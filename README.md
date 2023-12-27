@@ -18,3 +18,18 @@ Backend
 * sqlite to create database
 
 * deployed with live server for demonstration purposes
+
+## Usage
+The application is designed for user experience across various devices, ensuring mobile compatibility for ease of navigation. Upon accessing the main page through a browser, users are prompted to enter their symptoms. 
+Upon submitting the symptoms, the application leverages its database to provide a list of potential diseases with similar symptoms. Clicking on a specific disease redirects users to an article sourced from the National Library of Medicine, offering detailed information. Users can then actively engage with the information by adding or removing symptoms as they please, with real-time updates to the list of potential diseases, allowing for a dynamic and personalized user experience.
+
+## Acknowledgements
+Development Team
+Richard Vo
+Yongjun Le
+Troy Tran
+Natalie Mar
+
+Mentors
+Alexis Nguyen
+Danny Le
