@@ -10,10 +10,11 @@ Frontend
 * bootstrap for design templates
 * CSS for stylistic presentation
 * javascript element selection used for event handling
-* 
+  
 Backend
 * Flask web development framework
 * CSV datasets from Kaggle
 * python to clean data
 * sqlite to create database
 
+* deployed with live server for demonstration purposes
