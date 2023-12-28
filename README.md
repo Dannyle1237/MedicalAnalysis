@@ -5,6 +5,7 @@ the application gets more accurate. The dataset table will provide multiple dise
 it will not compare to an actual medical professional or primary doctor.
 
 ![](images/example1.png)
+
 ![](images/example2.png)
 
 ## Methodology
