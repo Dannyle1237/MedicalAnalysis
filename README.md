@@ -4,7 +4,8 @@ Analogous to Google, as the user enters symptoms, the application draws possible
 the application gets more accurate. The dataset table will provide multiple diseases with symptoms already listed. Although the website can provide all these predictions of what the patient could have, 
 it will not compare to an actual medical professional or primary doctor.
 
-
+![](images/example1.png)
+![](images/example2.png)
 
 ## Methodology
 Frontend
