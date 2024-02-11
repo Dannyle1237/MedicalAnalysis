@@ -13,7 +13,7 @@ Frontend
 * Structure of website with HTML and Javascript
 * bootstrap for design templates
 * CSS for stylistic presentation
-* javascript element selection used for event handling
+* Javascript element selection used for event handling
   
 Backend
 * Flask web development framework
@@ -42,3 +42,6 @@ Development Team
 Mentors
 * Alexis Nguyen
 * Danny Le
+
+## Mentorship & Collaboration
+Throughout this project, emphasis was placed on mentorship and collaborative learning. I (Danny Le) decided to take on the role of mentor, guiding each member on the development team through the fundamentals of coding in Python, JavaScript, CSS, and HTML, even with no prior experience. A pair programming system was implemented, ensuring that each member received personalized guidance and support, fostering an optimal learning environment. This collaborative approach not only led to the successful completion of the project but also empowered team members with invaluable coding skills and knowledge. Additionally, this experience provided me with valuable insights on how I could improve my skills as an educator. 
